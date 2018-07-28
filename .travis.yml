@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: I9M1h+UICSbUUFEroWr3o4G8DqXOzK8udFYnkrL9pm2KldZ5OKvKIJSflxJWARC2Z5sBcJPlcBn+RAvycvqmYUN9VGX2YMZFdxWpjC0UhkNWoJVuRrzs2G4wMFAWzNLQYsHMo5Ycvzp/ypvVJzlhIOOWvEKQaKTQZjxIQqTqrrUt+TGeSjn0t6UiOL4s9ce8o4KjWGmmSoAl30lJnRSksT3hKqN0VQtj6U5G7zuCQmGbd/8MS8bpIDFUmYXgfW02/mY4jCJpAGvxYJErLQiolo6Y4gdZZKHErQlRW4A3urqCWkvmNqzCLx+TTw6iDNVueYEyfyNwK8lJ2Mpn3AhWjtVT7NIZHuaQXIRyuHkMS4Yh/xXr5Z2IoZnn3y210994/6AfH3PccZ4JbabDuvCnyM0IlCyiE9Phx6SvW+/68wV7OqBIP8Fo3usnJhrkcEHLpq1T6KbHuS83/nVVe14OTYq+6UAzOal0WcRim9m4ki/WVmwEygoOnugJ83gDb9LuZrcGO22S3HMdDRlpTVAlMsS5ZqyP9rqaknrZThZLLNaY3yEnSihvudcZ6HRh/QNthE4eJPBAQ7V0FAfEDsi6r73U77aZyKZNwhAbzzzRKQMA58l6ETLFJO/IWhKaSxPt7IzIm1e9FaP2LENZyUDZ4yP2oLx8zqFhgHf8Fb4jMWQ=
+  app: limitless-hamlet-46306
+  on:
+    repo: velafarq/react-trello-testing
